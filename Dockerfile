@@ -22,3 +22,5 @@ RUN echo "===> Installing handy tools (not absolutely required)..." && \
 RUN echo "===> Removing package list..."  && \
     apk del build-dependencies && \
     rm -rf /var/cache/apk/*
+
+WORKDIR /playbook
