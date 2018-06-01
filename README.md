@@ -1,16 +1,16 @@
-# Ansible [![Build Status](https://drone.aurelienperrier.com/api/badges/Docker-example/alpine-ansible/status.svg?branch=master)](https://drone.aurelienperrier.com/Docker-example/alpine-ansible)
+# Ansible [![Docker Repository on Quay](https://quay.io/repository/perriea/alpine-ansible/status "Docker Repository on Quay")](https://quay.io/repository/perriea/alpine-ansible)
 
 ## Versions
 
 Alpine : `3.7`   
-Ansible : `2.4.3.0`
+Ansible : `2.5.4`
 
 ## Credentials
 
 **Default :**  
-* `VERSION` : `2.4.3.0`
+* `ANSIBLE_VERSION` : `2.5.4`
 
 ## Commands
 
-**Pull :** `docker pull perriea/alpine-ansible:3.7`   
-**Run :** `docker run -d perriea/alpine-ansible:3.7`
+**Pull :** `docker pull quay.io/perriea/alpine-ansible:1.0`   
+**Run :** `docker run -d quay.io/perriea/alpine-ansible:1.0`
