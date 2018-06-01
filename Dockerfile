@@ -1,9 +1,8 @@
 FROM alpine:3.7
 
-LABEL MAINTAINER="Aurelien PERRIER <perrie_a@etna-alternance.net>"
-LABEL APP="Ansible"
+LABEL MAINTAINER "Aurelien PERRIER <a.perrier89@gmail.com>"
 
-ENV VERSION 2.4.3.0
+ENV ANSIBLE_VERSION 2.5.4
 
 # Dependencies
 RUN apk --update add python py-pip openssl ca-certificates && \
@@ -12,7 +11,7 @@ RUN apk --update add python py-pip openssl ca-certificates && \
 
 # Install Ansible
 RUN echo "===> Installing Ansible..." && \
-    pip install ansible==${VERSION}
+    pip install ansible==${ANSIBLE_VERSION}
 
 # Tools
 RUN echo "===> Installing handy tools (not absolutely required)..." && \
